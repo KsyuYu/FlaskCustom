@@ -6,8 +6,8 @@ from flask_login import logout_user
 
 app = Flask(__name__)
 app.secret_key = 'random string'
-DATABASE_URL = os.environ['DATABASE_URL']
-UPLOAD_FOLDER = 'static/uploads'
+DATABASE_URL = "postgres://zvxzfkypismuhy:4a15b9097a1c7751f0bc843580c9b53d5404b8bc03052d245ebca84fbc26233c@ec2-54-74-156-137.eu-west-1.compute.amazonaws.com:5432/det7ohs5i6h31c"
+UPLOAD_FOLDER = os.path.join(BASE_DIR, 'static/uploads')
 ALLOWED_EXTENSIONS = set(['jpeg', 'jpg', 'png', 'gif'])
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
@@ -335,4 +335,4 @@ def parse(data):
     return ans
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
