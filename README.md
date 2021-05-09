@@ -23,4 +23,4 @@
 ## Heroku
 https://flaskcustshop.herokuapp.com
 ## Діаграма
-![](https://github.com/KsyuYu/FlaskCustom/blob/main/storediagram.gif)
+![](https://github.com/KsyuYu/FlaskCustom/blob/main/storediagram.png)
